@@ -1,0 +1,13 @@
+
+component_version: 1.0.0
+
+canary_iam_policies:
+  default_canary_policy:
+    action:
+      - s3:PutObject
+      - s3:GetBucketLocation
+      - s3:ListAllMyBuckets
+      - cloudwatch:PutMetricData
+      - logs:CreateLogGroup
+      - logs:CreateLogStream
+      - logs:PutLogEvents
